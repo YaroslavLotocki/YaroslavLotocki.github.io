@@ -1,3 +1,6 @@
+*{
+    outline: solid red;
+}
 body{
     font-family: "Formular-regular";
     background-color: #E5E7EB;
@@ -1004,12 +1007,20 @@ background-size: cover;
 }
 
 }
-@media (max-width: 778px){
+@media (max-width: 758px){
 .container{
  width: 640px;
 }
+.btn-next, .btn-prev{
+    display: none;
+}
 .header-phone-description{
  display: none;
+}
+.quality-subtitle{
+    width: 90%;
+    word-wrap: wrap;
+    
 }
 .header{
     height: 110px;
@@ -1186,7 +1197,9 @@ background-size: cover;
     height: 280px;
 }
 .delivery-photo{
-    width: 640px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 }
 @font-face {
